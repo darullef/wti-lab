@@ -18,7 +18,7 @@ def producer_1(name):
 
 def producer_2(name):
     redis = que.Que()
-    df = p.read_csv('../user_ratedmovies.dat', sep=" ", header=None, nrows=100,
+    df = p.read_csv('../data/user_ratedmovies.dat', sep=" ", header=None, nrows=100,
                     delimiter="\t",
                     names=['userID', 'movieID', 'rating',
                            'date_day', 'date_month', 'date_year',
